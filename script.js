@@ -38,3 +38,4 @@ function myFunction() {
     blurcont.style.filter="blur(3px)";
     
   }
+
