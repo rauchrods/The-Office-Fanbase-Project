@@ -139,6 +139,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 17%, rgba(0,0,0,0.8) 37%, rgba(
    position: sticky;
    top: 0px;
    border: 1px solid white;
+   
    z-index: 1;
    /* new commit */
 }
