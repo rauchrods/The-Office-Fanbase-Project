@@ -12,8 +12,8 @@
       rel="stylesheet">
 </head>
 <body>
-    <div class="maincontent">
-        <div class="headcontent">
+    <div class="maincontent" id="maincontent">
+        <div class="headcontent" id="headcontent">
             <h1>The Office</h1>
             <div class="info">
                 <div class="dropdown">
@@ -41,7 +41,7 @@
             </div>
             <p>In this first season of The Office, Dunder Mifflin Regional Manager Michael Scott (Steve Carell) leads the documentary team and his staff on a journey through inappropriate behavior, well-intentioned but misguided comments and a myriad of poor management techniques.</p>
             <div class="sharenfeedback">
-                <a href="#">
+                <a href="#" onclick="openshare()">
                     <svg class="_22qEau" viewBox="0 0 24 24" height="24" width="24" role="img" style="height:24px;width:24px" aria-hidden="true"><title>Share</title><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><title>Share</title><path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm12-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-3-4l-7-3m7-7l-7 3" stroke="currentColor" stroke-width="2" fill="none"></path></svg></svg> 
                     <span>Share</span>
                 </a>
@@ -50,13 +50,14 @@
                     <span>Feedback</span>
                 </a>
             </div>
-            <div class="video">
-                <video class="tst-video-overlay-player-html5" src="https://s3.ll.videorolls.row.aiv-cdn.net/ww_sin/9926/9d1b/3fb4/4140-b2b1-7c4b3e186c50/45002e9a-706d-4241-aa4b-d2be20032b9d_video_720p_4Mbps_audio_aaclc_128kbps.mp4"  controls autoplay muted></video>
-                <div></div>
+            <div class="headvideo">
+                <video class="tst-video-overlay-player-html5" src="https://s3.ll.videorolls.row.aiv-cdn.net/ww_sin/9926/9d1b/3fb4/4140-b2b1-7c4b3e186c50/45002e9a-706d-4241-aa4b-d2be20032b9d_video_720p_4Mbps_audio_aaclc_128kbps.mp4" id="headvideo" controls autoplay muted loop></video>
+                <div><span class="material-icons" onclick="headvidunmute()" >volume_up</span></div>
             </div>
         </div>
 
         <div class="mycardcontainer">
+            <h2>Season 1</h2>
             <div class="mycard">
                 <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/f7430eea8d79243b492987842f6b20482b7e7ae8607807eb85a7667afbb9852a._V_SX268_.jpg" width="300px" >
                  <div class="content">
@@ -154,5 +155,19 @@
             </div>
         </div>
     </div>
+
+    <div class="sharepopupmain" id="sharepopupmain">
+       <div class="sharepopup">
+          <input type="text"  id="shareinput" value="https://rauchrods.github.io/The-Office-Fanbase-Project/">
+           <button onclick="myFunction()">copy to clipboard</button>
+       </div>
+    </div>
+
+    <!-- <iframe src="http://51.158.153.210/the-office/season-1/The%20Office%20S01E01%20Pilot.mp4" frameborder="0" style="height:720px; width:1280px"></iframe> -->
+
+
+
+
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ body{
 .headcontent>P{
     margin: 30px 0px;
     margin-right: 50%;
-    height: 350px;
+    height: 320px;
     position: relative;
     z-index: 2;
     /* overflow-y: scroll; */
@@ -64,7 +64,7 @@ body{
     position: relative;
     z-index: 2;
 }
-.video{
+.headvideo{
     position: absolute;
     top:0px;
     right: 0px;
@@ -73,20 +73,32 @@ body{
     width: 80%;
   overflow: hidden;
 }
-.video>video{
+.headvideo>video{
     position: absolute;
     top:0px;
     right: 0px;
     bottom: 0px;
 }
-.video>div{
+.headvideo>div{
     position: absolute;
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 34%, rgba(0,0,0,0) 66%);
+background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 24%, rgba(0,0,0,0) 66%);
     top: 0;
     bottom: 0px;
     right: 0;
     width: 100%;
+    text-align: end;
+    padding: 30px;
+}
+.headvideo span{
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 50px !important;
+}
+.headvideo span:hover{
+    transform: scale(1.2);
 }
 /* .video{
     background-color: antiquewhite;
@@ -114,6 +126,9 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 34%, rgba(0
 }
 .mycard:hover{
     transform: scale(1.04);
+    background: #F3904F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition-duration: 0.4s;
 }
 .mycard>img{
@@ -138,7 +153,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 34%, rgba(0
     font-size: 40px !important;
 }
 .cardheading .playbtn:hover{
-    transform: scale(1.2);
+    transform: scale(1.6);
     transition-duration: 0.4s;
 }
 .content>span{
@@ -167,7 +182,14 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 34%, rgba(0
       }
 }
 
-@media screen and (max-width:420px){
+@media (max-width:420px){
+    .headvideo span{
+        position: absolute;
+        top:450px;
+        right:5px;
+        z-index: 3;
+    }
+
     .mycard>img{
         height: 100%;
         width:100%;
@@ -188,4 +210,50 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 34%, rgba(0
         padding: 30px 20px;
     }
 
+}
+.sharepopupmain{
+    border: 1px solid white;
+    
+    background-color: rgba(0, 0, 0, 0.373) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: none;
+    /* filter: blur(1px); */
+}
+
+.sharepopup{
+    width: 450px;
+    height: 200px;
+    border: 1px solid white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    /* background-color: rgb(167, 251, 223); */
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    
+}
+.sharepopup>input{
+    background-color: black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 350px;
+}
+.sharepopup>button{
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 10px;
 }
