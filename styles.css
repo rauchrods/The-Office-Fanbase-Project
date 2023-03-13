@@ -83,8 +83,10 @@ body{
     position: absolute;
     /* background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0.7) 44%, rgba(0,0,0,0.2) 78%); */
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.8) 47%, rgba(0,0,0,0.2) 77%); */
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.8) 47%, rgba(0,0,0,0.2) 77%);
+background: linear-gradient(90deg, rgba(0,0,0,1) 17%, rgba(0,0,0,0.8) 37%, rgba(0,0,0,0.2) 77%);
     top: 0;
     bottom: 0px;
     right: 0;
