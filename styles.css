@@ -114,6 +114,11 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 24%, rgba(0
     row-gap: 20px;
 
 }
+.mycardcontainer>h2{
+   color: #a18204;
+   font-size: 42px !important;
+   /* new commit */
+}
 .mycard{
     border: 1px solid  white;
     display: flex;
