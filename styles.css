@@ -82,7 +82,7 @@ body{
 .headvideo>div{
     position: absolute;
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 7%, rgba(0,0,0,0.7) 24%, rgba(0,0,0,0) 66%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 6%, rgba(0,0,0,0.7) 44%, rgba(0,0,0,0.2) 78%);
     top: 0;
     bottom: 0px;
     right: 0;
