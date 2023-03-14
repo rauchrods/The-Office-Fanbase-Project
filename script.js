@@ -30,6 +30,7 @@ function myFunction() {
     blurcont.style.filter="blur(0)";
   }
 
+  
   function openshare(){
     let sharepopup = document.getElementById("sharepopupmain");
     sharepopup.style.display="flex";
