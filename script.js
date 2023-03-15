@@ -9,6 +9,8 @@ function headvidunmute() {
       else {
         videoelement.muted = true;
       }
+
+      break;
     }
 
   }
@@ -47,11 +49,9 @@ function openshare() {
 
 }
 
-let strarr = ["headvideo1", "headvideo2", "headvideo3", "headvideo4", "headvideo5"];
+let strarr = ["headvideo1", "headvideo2", "headvideo3"];
 
 window.onload = function () {
-
-
 
   let x = parseInt(Math.random() * strarr.length);
 
