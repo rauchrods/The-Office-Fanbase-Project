@@ -87,6 +87,7 @@ body{
     top:0px;
     right: 0px;
     bottom: 0px;
+    display: none;
 }
 .headvideo>div{
     position: absolute;
@@ -130,10 +131,10 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 17%, rgba(0,0,0,0.8) 37%, rgba(
 .seasontitle{
    /* color: #a18204; */
    background-image: linear-gradient( 89.4deg,  rgba(194,0,39,0.8) 0.9%, rgba(10,35,104,0.6) 99.4% );
-   height: 80px;
+   /* height: 80px; */
    width: 100%;
    margin-bottom: 20px;
-   padding-left: 20px;
+   padding: 15px 10px;
    font-size: 42px !important;
    cursor: pointer;
    /* border-radius: 10px; */
@@ -240,7 +241,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 17%, rgba(0,0,0,0.8) 37%, rgba(
       }
 }
 
-@media (max-width:420px){
+@media (max-width:430px){
     .headvideo span{
         position: absolute;
         top:450px;
