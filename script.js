@@ -61,3 +61,20 @@ window.onload = function () {
 
 }
 
+
+const observer = new IntersectionObserver((entrier) =>{
+    entrier.forEach((entry)=>{
+      console.log(entry);
+      if(entry.isIntersecting){
+        entry.target.classList.add("show");
+      }
+      else{
+        entry.target.classList.remove("show");
+      }
+    });
+});
+
+
+const hiddenelement = document.querySelectorAll(".mycard");
+hiddenelement.forEach((el)=> observer.observe(el));
+
